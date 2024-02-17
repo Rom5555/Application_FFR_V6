@@ -14,21 +14,20 @@ class Page_acceuil():
           <section class="section">
             <div class="container">
               <h1 class="title">Application FFR</h1>
+              <form class="box" method="POST" action="/login"> <!-- Ajout de l'attribut action -->
               <form class="box">
                 <div class="field">
                   <label class="label">Email</label>
                   <div class="control">
-                    <input class="input" type="email" placeholder="e.g. alex@example.com">
+                    <input class="input" type="email" name="email" placeholder="e.g. alex@example.com">
                   </div>
-                </div>
-    
+                </div>   
                 <div class="field">
                   <label class="label">Password</label>
                   <div class="control">
-                    <input class="input" type="password" placeholder="********">
+                    <input class="input" type="password" name="password" placeholder="********">
                   </div>
-                </div>
-    
+                </div>   
                 <button class="button is-primary">Sign in</button>
               </form>
             </div>

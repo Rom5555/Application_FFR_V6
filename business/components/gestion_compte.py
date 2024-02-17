@@ -22,6 +22,8 @@ class Gestion_compte(Ifonction_get,Ifonction_create, Ifonction_update):
             self.utilisateur.is_admin = row[5]
             print("Bonjour", self.utilisateur.nom, self.utilisateur.prenom)
             print("Type utilisateur: administrateur" if self.utilisateur.is_admin else "Type utilisateur: normal")
+            if self.utilisateur.is_admin:
+                return True
 
 
         except Exception as e:
