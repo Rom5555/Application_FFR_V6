@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire météo côté client</title>
+</head>
+<body>
+    <h1>Formulaire client pour consultation des prévisions météo (côté client)</h1>
+    <form action="http://localhost:8000/villes" method="post">
+    <select name="ville">
+                <optgroup label="Region parisienne">
+                    <option value="Paris">Paris</option>
+                </optgroup>
+                <optgroup label="Alsace">
+                    <option value="Strasbourg">Strasbourg</option>
+                </optgroup>
+                <optgroup label="Sud Est">
+                    <option value="Lyon">Lyon</option>
+                    <option value="Avignon">Avignon</option>
+                </optgroup>
+            </select>
+        <input type="submit">
+    </form>
+</body>
+</html>
